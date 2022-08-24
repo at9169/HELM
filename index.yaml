@@ -1,0 +1,48 @@
+apiVersion: v1
+entries:
+  mysql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 8.0.30
+    created: "2022-08-24T18:30:45.320799168Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: fcd6348cde0f1260800cc7996b9eb820fa37f892341bf13a6d4a579770e13327
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mysql
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mysql
+    - https://mysql.com
+    urls:
+    - mysql-9.3.0.tgz
+    version: 9.3.0
+  test:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-24T18:30:45.321200268Z"
+    description: A Helm chart for Kubernetes
+    digest: 2173a399e01e98a5cd283ca56908de807c8ae4f8412c9429704ef38d044fbd8f
+    name: test
+    type: application
+    urls:
+    - test-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-24T18:30:45.317212366Z"
