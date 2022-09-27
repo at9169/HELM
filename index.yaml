@@ -1,11 +1,38 @@
 apiVersion: v1
 entries:
+  management-module-helm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-09-27T10:13:46.923537829Z"
+    dependencies:
+    - name: keycloak
+      repository: http://134.44.28.237:30238/artifactory/helm-local/
+      version: 18.1.1
+    - name: be4fe-helm
+      repository: http://134.44.28.237:30238/artifactory/helm-local/
+      version: 0.1.4
+    - name: easy-iot-fe-helm
+      repository: http://134.44.28.237:30238/artifactory/helm-local/
+      version: 0.1.2
+    - name: main-fe-react-helm
+      repository: http://134.44.28.237:30238/artifactory/helm-local/
+      version: 0.1.2
+    - name: postgres
+      repository: https://groundhog2k.github.io/helm-charts/
+      version: 0.3.9
+    description: A Helm chart for Kubernetes
+    digest: ad2bdaa947d568289292db302c7bfb7a7635f0de5092dfa5439edca1373b9a85
+    name: management-module-helm
+    type: application
+    urls:
+    - management-module-helm-0.1.993.tgz
+    version: 0.1.993
   mysql:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 8.0.30
-    created: "2022-08-24T18:30:45.320799168Z"
+    created: "2022-09-27T10:13:46.927913754Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -37,7 +64,7 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-08-24T18:30:45.321200268Z"
+    created: "2022-09-27T10:13:46.931724262Z"
     description: A Helm chart for Kubernetes
     digest: 2173a399e01e98a5cd283ca56908de807c8ae4f8412c9429704ef38d044fbd8f
     name: test
@@ -45,4 +72,4 @@ entries:
     urls:
     - test-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-24T18:30:45.317212366Z"
+generated: "2022-09-27T10:13:46.9120328Z"
